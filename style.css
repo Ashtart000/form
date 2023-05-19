@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.travel-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.reservation {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
+    padding: 10px;
+    position: relative;
+}
+
+.button-reset::after {
+    content: "\2717";
+    color: gray;
+    font-size: 35px;
+    position: absolute;
+    bottom: 41px;
+    left: 300px;
+}
+
+.button-submit::after {
+    content: "\2714";
+    color: teal;
+    font-size: 40px;
+    position: absolute;
+    bottom: 2px;
+    left: 300px;
+}
+
+.form-title {
+    font-size: 34px;
+    color: teal;
+}
+
+.form-denotes {
+    margin: 10px 0;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input:hover,
+select:hover {
+    border: 2px solid teal;
+}
+
+input, .select, .button {
+    padding: 5px;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 2px solid rgb(181, 181, 182);
+}
+
+input {
+    box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+fieldset {
+    border: none;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.radio {
+    margin-right: 15px;
+}
+
+input, .select, .date, ::placeholder {
+    color: teal;
+}
+
+.select {
+    width: 60%;
+    background-color: rgba(0, 128, 128, 0.2);
+}
+
+.button {
+    width: 70%;
+    background-color: teal;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: rgb(1, 97, 97);
+}
+
+::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 0.4;
+}
+
+/* Какое свойство отвечает за цвет бєкграунда заполненных путем автозаполнения полей
+
+один обязательный чекбокс - как, кроме js?
+
+обязательный радиобокс только первый как?
+*/
+
+

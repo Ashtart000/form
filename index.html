@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="travel-form">
+        <form action="./test" method="POST" class="reservation">
+            <h2 class="form-title">Travel reservation form</h2>
+            <p class="form-denotes">* denotes mandotory</p>
+            <label class="label">Full name*:
+                <input type="text" name="name" required placeholder="FirstName LastName">
+            </label>
+            <label class="label">Email address*:
+                <input type="email" name="email" required placeholder="Email Address">
+            </label>
+            <label class="label">Select Tour Package*:
+                <select name="tour" class="select">
+                    <option class="" value="Goa">Dubai, UAE</option>
+                    <option value="Bali">Bali, Indonesia</option>
+                    <option value="Cancun">Cancun, Mexico</option>
+                    <option value="Crete">Crete, Greece</option>
+                    <option value="Marrakech">Marrakech, Morocco</option>
+                    <option value="Dominican">Dominican Republic</option>
+                    <option value="Playa del Carmen">Playa del Carmen, Mexico</option>
+                    <option value="New Delhi">New Delhi, India</option>
+                </select>
+            </label>
+            <label class="label">Arrival Date*:
+                <input type="date" class="date" name="date" required>
+            </label>
+            <label class="label">Number of persons*:
+                <input type="text" name="persons" required placeholder="Two persons">
+            </label>
+
+            <fieldset required>
+                <legend>What would you want to avail?*</legend>
+                <label class="checkbox">Boarding
+                    <input type="checkbox" name="avail" value="Boarding" required>
+                </label>
+                <label class="checkbox">Fooding
+                    <input type="checkbox" name="avail" value="Fooding">
+                </label>
+                <label class="checkbox">Sight seeing
+                    <input type="checkbox" name="avail" value="Sight seeing">
+                </label>
+            </fieldset>
+
+            <label class="label">Discount Coupon Code:
+                <input type="text" name="discount" placeholder="SUMMERSALE">
+            </label>
+
+            <fieldset>
+                <legend>Terms and conditions*</legend>
+                <label class="radio">I agree
+                    <input type="radio" name="terms" value="yes" required>
+                </label>
+                <label class="radio">I disagree
+                    <input type="radio" name="terms" value="no">
+                </label>
+            </fieldset>
+            <button type="reset" class="button button-reset">Clear form</button>
+            <button type="submit" class="button button-submit">Complete reservation</button>
+        </form>
+    </section>
+</body>
+</html>
